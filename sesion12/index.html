@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+		<title>Plantilla Bootstrap</title>
+	</head>
+	<body>
+		<div class="container" id="test"></div>
+		<script src="assets/js/jquery-3.3.1.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript">
+			/*console.log("Hola javascript");
+			document.write("Hola javascript");
+			alert("Hola javascript");
+			document.getElementById("test").innerHTML="<h1> Que bonito es programar</h1>";
+
+
+            document.getElementById("test").innerHTML="La Suma es: "+(parseInt(prompt("Ingrese n1"))+parseInt(prompt("Ingrese n2")));
+            dias=["Lunes","Martes","Miercoles","Jueves","Viernes"];
+            console.log(dias.length);
+            document.getElementById("test").innerHTML=dias[0];*/
+
+            estudiante={
+            	nombre:"Michele",
+            	edad:80,
+            	afines:['Tragamonedas','Leer','Dormir'],
+            mostrarNombre:function(){
+            	console.log(estudiante.nombre);
+            },
+            mostrarEdad:function(){
+            	console.log(estudiante.edad);
+            },
+            ponerNombre:function(n){
+            	estudiante.nombre=n;
+            }
+        	};
+
+        	estudiante.mostrarNombre();
+        	estudiante.mostrarEdad();
+        	//a=prompt("Ingrese nombre");
+        	estudiante.ponerNombre(prompt("Ingrese nombre"));
+        	estudiante.mostrarNombre();
+		</script>
+	</body>
+</html>
